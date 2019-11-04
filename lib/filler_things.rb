@@ -1,6 +1,5 @@
 class FillerThings
   def self.ask_and_write
-
     # создаем новые элементы
     puts "Начинаем ввод данных новой вещи"
     print "Введите название вещи (к примеру Кроссовки):"
@@ -36,7 +35,6 @@ class FillerThings
     # записываем три строчки
     [clothes_name, clothes_type, temp_range].map do |item|
       file = File.new(file_name, "a:UTF-8")
-      # print item
       file.print("#{item}\n")
       file.close
     end

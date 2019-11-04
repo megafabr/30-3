@@ -1,4 +1,3 @@
-# require_relative 'lib/guide'
 require_relative 'lib/filler_things'
 require_relative 'lib/things_collection'
 
@@ -35,9 +34,9 @@ loop do
     ThingsCollection.new.temp_range_collection
     things_for_temp = ThingsCollection.new.collection_for_temp(temp)
     puts things_for_temp
+    puts
   end
     puts <<-HTML
-    
     Искусственный интелект (Алиса) предполагает, 
     что этого набора не хватит чтобы выйти на улицу.
     Если согласны с Алисой введите 1 (вы сможете
